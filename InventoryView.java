@@ -26,7 +26,7 @@ public class InventoryView extends JFrame {
         productTypeBox = new JComboBox<>(productTypes);
         add(productTypeBox);
 
-        add(new JLabel("Expiration Date (yyyy-mm-dd, Food only):"));
+        add(new JLabel("Expiration Date (yyyy-MM-dd, Food only):"));
         expirationDateField = new JTextField();
         expirationDateField.setEnabled(false);
         add(expirationDateField);
