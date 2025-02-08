@@ -51,7 +51,7 @@ public class InventoryModel {
 
     public boolean isValidDate(String date) {
         try {
-            LocalDate.parse(date, DateTimeFormatter.ofPattern("yyyy-mm-dd"));
+            LocalDate.parse(date, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
             return true;
         } catch (Exception e) {
             return false;
