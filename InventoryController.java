@@ -40,7 +40,7 @@ public class InventoryController {
                 return;
             }
             if (!model.isValidDate(expirationDate)) {
-                view.resultArea.append("Error: Invalid expiration date format. Use yyyy-mm-dd.\n");
+                view.resultArea.append("Error: Invalid expiration date format. Use yyyy-MM-dd.\n");
                 return;
             }
             if (LocalDate.parse(expirationDate).isBefore(LocalDate.now())) {
